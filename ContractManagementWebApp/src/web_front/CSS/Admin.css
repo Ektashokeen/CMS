@@ -1,0 +1,57 @@
+body {
+    background-color: #6f9a29;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.admin-options {
+    background-color: #9ce8b2;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(141, 124, 248, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h3 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.admin-options {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.admin-options input[type="radio"] {
+    margin-right: 10px;
+}
+
+.admin-options label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.admin-options input[type="radio"]:checked + label {
+    color: #007bff;
+}
+
+.admin-options label:hover {
+    color: #0056b3;
+}
+.next{
+    text-align: right !important;
+    color: #007bff;
+    padding: 5px;
+}

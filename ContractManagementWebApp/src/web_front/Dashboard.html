@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CMS Dashboard</title>
+    <link rel="stylesheet" href="CSS/Dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      
+      <header>
+        <div class="logo">CMS Dashboard</div>
+        <div class="user-profile">
+          <a href="Login.html" id="signupBtn" class="button-link">Login</a>
+       
+        </div>
+      </header>
+
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li><a href="Dashboard.html">Dashboard</a></li>
+          <li><a href="Contracts.html">Contracts</a></li>
+          <li><a href="Add_Contract.html">Add Contract</a></li>
+          <li><a href="Report.html">Reports</a></li>
+          <li><a href="Setting.html">Settings</a></li>
+        </ul>
+      </nav>
+
+      <!-- Search Bar -->
+      <section class="search-bar">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search contracts..."
+          onkeyup="filterContracts()"
+        />
+      </section>
+
+      <!-- Main Content -->
+      <main>
+        <!-- Contract Summary Widgets -->
+        <section class="contract-summary">
+          <div class="summary-item">
+            <h3>Total Contracts</h3>
+            <p id="totalContracts">0</p>
+          </div>
+          <div class="summary-item">
+            <h3>Active Contracts</h3>
+            <p id="activeContracts">0</p>
+          </div>
+          <div class="summary-item">
+            <h3>Expired Contracts</h3>
+            <p id="expiredContracts">0</p>
+          </div>
+          <div class="summary-item">
+            <h3>Contracts Near Expiration</h3>
+            <p id="nearExpirationContracts">0</p>
+          </div>
+        </section>
+
+        <!-- Recent Activity -->
+        <section class="recent-activity">
+          <h2>Recent Activity</h2>
+          <ul id="recentActivityList">
+            <!-- JavaScript will populate this list -->
+          </ul>
+        </section>
+
+        <!-- Upcoming Deadlines -->
+        <section class="upcoming-deadlines">
+          <h2>Upcoming Deadlines</h2>
+          <ul id="upcomingDeadlinesList">
+            <!-- JavaScript will populate this list -->
+          </ul>
+        </section>
+
+      
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2024 Contract Management System. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script src="JS/dashboard.js"></script>
+  </body>
+</html>
